@@ -85,7 +85,7 @@ var localised = {
       setTimeout(timed, 15000);
       $.ajax({
         url: config.postcodeBaseUrl + postcode,
-        jsonpCallback: 'setMPManual',
+        jsonpCallback: 'localised.setMPManual',
         dataType: 'jsonp'
       });
   },
